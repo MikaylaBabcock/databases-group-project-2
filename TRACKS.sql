@@ -1,0 +1,9 @@
+CREATE TABLE TRACKS (
+	Inv_ID INT NOT NULL,
+    Book_ID INT NOT NULL,
+    Restock_Amt INT,
+    Quantity INT,
+    PRIMARY KEY (Inv_ID, Book_ID),
+    FOREIGN KEY (Inv_ID) REFERENCES INVENTORY(Inventory_ID),
+    FOREIGN KEY (Book_ID) REFERENCES BOOK(Book_ID)
+);
