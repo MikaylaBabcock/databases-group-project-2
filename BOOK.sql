@@ -3,9 +3,9 @@ CREATE TABLE BOOK (
 	Title VARCHAR(255) NOT NULL,
     Genre VARCHAR(255),
     Pub_Name VARCHAR(255),
-    Pub_Contact_Info VARCHAR(255),
-    -- ^^phone number and email?
-    Pub_Year INT(4),
+    Pub_Phone VARCHAR(15),
+    Pub_Email VARCHAR(255),
+    Pub_Year INT,
     Price DECIMAL(10,2),
     Stock_Quantity INT,
     PRIMARY KEY (Book_ID)

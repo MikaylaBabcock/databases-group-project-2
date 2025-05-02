@@ -1,6 +1,6 @@
 CREATE TABLE INVENTORY (
 	Inventory_ID INT NOT NULL,
-    Mgr_ID INT NOT NULL,
+    Manager_ID INT NOT NULL,
     PRIMARY KEY (Inventory_ID),
     FOREIGN KEY (Mgr_ID) REFERENCES EMPLOYEE(Employee_ID)
 );
